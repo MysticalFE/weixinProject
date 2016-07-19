@@ -1,0 +1,138 @@
+.form_name {
+	font-size: 16px;
+}
+.formbus .form_head .form_logo{
+	background: url(../img/formimg/title.jpg);
+	background-size: 100% 100%;
+	width: 13.44rem;
+	height: 4.714667rem;
+	position: relative;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
+	margin-top: 1rem;
+}
+
+.formbus .form_desc {
+	margin-top: 0rem;
+	text-align: center;
+	font-weight: bold;
+}
+.form_body {
+	width:14rem;
+	margin:0 auto;
+    margin-top: 1rem;
+}
+.form_body .line_bar {
+	font-size: 25px;
+}
+.form_body .line_bar::before {
+	content: '';
+	display: inline-block;
+	width: 0.661333rem;
+	height: 0.768rem;
+	background: url(../img/formimg/20.png);
+	background-size: 100% 100%;
+}
+
+.form_body .line_bar::after {
+	display: inline-block;
+	content: '';
+	width: 0.725333rem;
+	height: 0.874667rem;
+	background: url(../img/formimg/21.png);
+	background-size: 100% 100%;
+}
+.selcity {
+	color: #ff8903;
+}
+.up_part {
+	margin-top: .5rem;
+	background: white;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	padding-bottom: 3px;
+}
+.up_part input {
+	border:0;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	outline: 0;
+	width:10rem;
+	margin-bottom: 0.1rem;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.up_part .time {
+	border:0;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	outline: 0;
+	width:10rem;
+	margin-bottom: 0.1rem;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	display: inline-block;
+}
+.up_part .home_addr {
+	border-bottom: 1px solid #e0e0e0;
+}
+.up_part .morning {
+	border-bottom: 1px solid #e0e0e0;
+	color: gray;
+}
+.eveing {
+	color: gray;
+}
+.home_addr b {
+	content: '';
+	width: 0.789333rem;
+	height: 0.618667rem;
+	background: url(../img/formimg/fam.png);
+	background-size: 100% 100%;	
+	display: inline-block;
+	margin-left: .3rem;
+}
+.morning b {
+	content: '';
+	width: 0.789333rem;
+	height: 0.618667rem;
+	background: url(../img/formimg/mor.png);
+	background-size: 100% 100%;	
+	display: inline-block;
+	margin-left: .3rem;
+	position: relative;
+}
+.work_addr b {
+	content: '';
+	width: 0.725333rem;
+	height: 0.874667rem;
+	background: url(../img/formimg/com.png);
+	background-size: 100% 100%;
+	display: inline-block;
+	margin-left: .3rem;
+}
+.eveing b {
+	content: '';
+	width: 0.725333rem;
+	height: 0.874667rem;
+	background: url(../img/formimg/eve.png);
+	background-size: 100% 100%;
+	display: inline-block;
+	margin-left: .3rem;
+	position: relative;
+}
+.formbus .collect-submit {
+	margin: 1.5rem auto 0 auto;
+    width: 8.192rem;
+    height: 3.008rem;
+    background-image: url(/img/formimg/dis_submit.png);
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+body .formbus .collect-submit.active {
+    background-image: url(/img/formimg/suc_submit.png);
+}

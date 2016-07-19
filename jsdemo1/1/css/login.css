@@ -1,0 +1,88 @@
+.login .login-logo {
+	
+	width:12.16rem;
+	height:3.050667rem;
+	background-size: 100%, 100%;
+	background-image: url(../img/32.pic.jpg);
+	position: relative;
+    top: 1.5rem;
+    margin: 0 auto;
+}
+.login .login-title {
+	margin-top: 2rem;
+	font-size: 0.8rem;
+	line-height: 1rem;
+	color: rgba(0, 0, 0, 0.77);
+	text-align: center;
+	font-family: nice_icon;
+	font-weight: bold;
+}
+.login {
+	padding: 1.1rem 0.45rem;
+}
+.login .login-content {
+	margin: 0.8rem 0.3rem;
+}
+.login .check-code.active {
+    background: #ff8903;
+}
+.login .login-btn.active {
+    background: #ff8903;
+}
+.login input {
+	border:1px solid #d9d9d9;
+	height: 100%;
+	font-size:.7rem;
+	border-radius: 3px;
+	text-indent: 10px;
+	outline:none;
+	&::-webkit-input-placeholder{
+		text-indent: 10px;
+		color:#e4e4e4;
+		font-size: .7rem;
+		font-family: nice_icon;
+	}
+	text-indent: 10px;
+}
+.login p {
+	height: 2rem;
+	line-height: 2rem;
+}
+.login .input-tel {
+	width:10.2rem;
+}
+.input-code{
+	margin:10px 0;
+	width: 100%;
+}
+.check-code{
+	display: inline-block;
+	width:3.6rem;
+	text-align: center;
+	color:#fff;
+	font-family: nice_icon;
+	float:right;
+	border-radius: 3px;
+	background:#e4e4e4;
+	font-size: .7rem;
+	&.active{
+		background: @orangeColor;
+	}
+	&.recheck{
+		background: #e4e4e4;
+		font-size: .6rem;
+	}
+}
+.login .login-btn {
+	margin-top:30px;
+	width: 100%;
+	background:#e4e4e4;
+	color:#FFF;
+	text-align: center;
+	border-radius: 3px;
+	font-size: .7rem;
+	font-family: nice_icon;
+	&.active{
+		background: @orangeColor;
+	}
+}

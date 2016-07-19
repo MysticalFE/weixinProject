@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="../js/rem.js"></script>
+    <!--STYLE_PLACEHOLDER-->
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/loadbus.css">
+    <link rel="stylesheet" href="./css/pancake.css"/>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <title></title>
+</head>
+<body>
+<div class="m-contaienr" id="container" style="display: none;">
+     <section class="m-home">
+        <div class="l-title"></div>
+        <div class="top-view">
+            <div class="p-cloud">
+                <div class="cloud"></div>
+            </div>
+            <div class="p-sibcloud">
+                <div class="sibcloud"></div>
+            </div>
+            <div class="up-sun">
+                <div class="sunshine"></div>
+            </div>
+            <div class="city">
+                <div class="behind_city"></div>
+                <div class="sibbehind_city"></div>
+                <div class="front_city"></div>
+                 <div class="sibfront_city"></div>
+                <div class="p-car">
+                    <div class="car"></div>
+                </div>
+                <div class="button"></div>
+            </div>
+            <div class="floor">
+            </div>
+        </div>
+    </section>  
+    <section class="m-pancake animated fadeIn"
+            data-role="pancake"
+            style="display: none;">
+        <div class="m-pot">
+            <div class="panel js-panel"></div>
+            <div data-role="tip-top"></div>
+            <div data-role="bowl">
+                <div data-role="tip-next"></div>
+            </div>
+        </div>
+        <div class="m-cloth">
+            <div data-role="holder">
+                <div data-role="eggs"></div>
+            </div>
+            <div data-role="tip"></div>
+            <div data-role="tool" class="shovel"></div>
+        </div>
+    </section>
+    <section class="m-score"
+            data-role="scoreSection" style="display: none;">
+        <div data-role="bag_back"></div>
+        <div data-role="cake_score"></div>
+        <div data-role="bag_front"></div>
+        <div data-role="cake_last"></div>
+        <div class="score"
+                data-role="scoreWrapper">
+            <span data-role="score"></span>
+            <span data-role="percent"></span>
+            <div data-role="title"></div>
+        </div>
+        <div class="m-cloth"
+             data-role="cloth_transition"></div>
+        <div class="m-cloth"
+             data-role="cloth_last"
+                style="">
+            <div class="bag"></div>
+            <div class="seasonings"></div>
+            <div class="nicesay"></div>
+            <div class="reward"
+                 data-role="reward1"></div>
+            <div class="more"
+                    data-role="replay"></div>
+        </div>
+    </section>
+    <section class="m-notice"
+            data-role="share-notice">
+        <div class="tip"></div>
+    </section>
+    <section class="m-score"
+             data-role="reward"
+            style="display: none;">
+        <div class="score2"></div>
+        <div class="m-cloth gift">
+            <div class="bag"></div>
+            <div class="seasonings"></div>
+            <div class="reward2"
+                    data-role="reward2"></div>
+            <div class="more2"
+                 data-role="replay2"></div>
+        </div>
+    </section>
+    <section class="m-reward-pop"
+             data-role="reward-pop"
+             style="display: none;">
+        <img src="images/reward-pop.png"/>
+        <div data-role="close"></div>
+    </section>
+</div>
+<aside class="media-wrap on">
+    <i id="musicBtn" class="music-btn on"></i>
+
+</aside>
+<aside class="media-wrap-logo on">
+    <i class="logo"></i>
+</aside>
+<audio id="autoplay" loop="loop">
+    <source src="http://didi.kuaidadi.com/static/vedio/193c04f78c8e84ec0cb1424e0505e2fd.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<div class="preLoader" style="visibility: hidden; position: absolute; top: -999em;">
+    <img src="./img/redline.png"/>
+    <img src="./img/bus.png"/>
+    <span class="preload m-line"></span>
+    <span class="preload m-cloth"></span>
+    <span class="preload m-pot"></span>
+    <span class="preload cake"></span>
+    <span class="preload cake1"></span>
+    <span class="preload yolk"></span>
+    <span class="preload yolk1"></span>
+    <span class="preload shovel"></span>
+    <span class="preload spread"></span>
+    <span class="preload pan-batter"></span>
+    <span class="preload pan"></span>
+    <span class="preload bowl"></span>
+    <span class="preload next"></span>
+    <span class="preload plate"></span>
+    <span class="preload eggs"></span>
+    <span class="preload eggs1"></span>
+    <span class="preload eggs2"></span>
+    <span class="preload eggs3"></span>
+    <span class="preload spread_egg"></span>
+    <span class="preload eggbatters1"></span>
+    <span class="preload eggbatters2"></span>
+    <span class="preload eggbatters3"></span>
+    <span class="preload pan_sauce"></span>
+    <span class="preload pan_chilli"></span>
+    <span class="preload crackers"></span>
+    <span class="preload rake"></span>
+    <span class="preload tip_swipup"></span>
+    <span class="preload tip_swipdown"></span>
+    <span class="preload cover_up"></span>
+    <span class="preload cover_down"></span>
+    <span class="preload pancake"></span>
+    <span class="preload cloth_h"></span>
+    <span class="preload fat0"></span>
+    <span class="preload fat1"></span>
+    <span class="preload fat2"></span>
+    <span class="preload fat3"></span>
+    <span class="preload fat4"></span>
+    <span class="preload fat5"></span>
+    <span class="preload fat6"></span>
+    <span class="preload fat7"></span>
+    <span class="preload fat8"></span>
+    <span class="preload fat9"></span>
+    <span class="preload thin0"></span>
+    <span class="preload thin1"></span>
+    <span class="preload thin2"></span>
+    <span class="preload thin3"></span>
+    <span class="preload thin4"></span>
+    <span class="preload thin5"></span>
+    <span class="preload thin6"></span>
+    <span class="preload thin7"></span>
+    <span class="preload thin8"></span>
+    <span class="preload thin9"></span>
+    <span class="preload chef"></span>
+    <span class="preload crackers_king"></span>
+    <span class="preload pancake_man"></span>
+    <span class="preload share_notice"></span>
+    <span class="preload share"></span>
+    <span class="preload more"></span>
+    <span class="preload reward"></span>
+    <span class="preload bag"></span>
+    <span class="preload cake_last"></span>
+    <span class="preload bag_back"></span>
+    <span class="preload bag_front"></span>
+    <span class="preload bag"></span>
+    <span class="preload seasonings"></span>
+    <span class="preload more2"></span>
+    <span class="preload score2"></span>
+    <span class="preload butter-brush"></span>
+    <span class="preload chilli-brush"></span>
+    <span class="preload reward-pop"></span>
+</div>
+<!--SCRIPT_PLACEHOLDER-->
+<script src="../js/zepto.js"></script>
+<script src="../js/plugin/hammer.js"></script>
+<script src="../js/plugin/pace.js"></script>
+<script src="pancake.js"></script>
+<!--RESOURCEMAP_PLACEHOLDER-->
+<script>
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+.home .header_page {
+	position: relative;
+	top: 1.5rem;
+}
+.home .header_logo {
+	position: relative;
+	background: url(../img/homeimg/1.png);
+	background-size: 100% 100%;
+	width: 14.336rem;
+	height: 15.381333rem;
+	animation: bounceInDown 1s 1 linear both;
+	animation-delay: 0.5s;
+	left: .4299rem;
+}
+
+.home .header_title {
+	position: absolute;
+	background: url(../img/homeimg/text.png);
+	background-size: 100% 100%;
+	width: 7.189333rem;
+	height: 2.026667rem;
+	bottom: 0.9888rem;
+    right: 2.2rem;
+    animation: slideInRight 2s 1 cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+    -webkit-animation: slideInRight 2s 1 cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+}
+
+.home .middle_page {
+	position: relative;
+	top:-1.5rem;
+}
+.home .wrap_city {
+	position: relative;
+	top: -.6rem;
+    left: 0;
+    -webkit-animation: fadeIn 1.5s 1 linear both;
+    			animation: fadeIn 1.5s 1 linear both;
+}
+.home .wrap_city .left_city {
+	position: relative;
+	background: url(../img/homeimg/left.png);
+	background-size: 100% 100%;
+	width: 13.973333rem;
+	height: 9.962667rem;
+	bottom: 0.9888rem;
+}
+.home .wrap_city .middle_city {
+	position: absolute;
+	background: url(../img/homeimg/middle.png);
+	background-size: 100% 100%;
+	width: 11.2rem;
+	height: 9.322667rem;
+	bottom: 0.9888rem;
+	left: 4rem;
+	top: -3rem;
+}
+.home .wrap_city .right_city {
+	position: absolute;
+	background: url(../img/homeimg/right.png);
+	background-size: 100% 100%;
+	width: 11.2rem;
+	height: 9.322667rem;
+	bottom: 0.9888rem;
+	right: 0;
+	top: -1.5rem;
+}
+
+.home .middle_bus {
+	position: absolute;
+	bottom: 1.5rem;
+	width: 12.16rem;
+	height: 4.458667rem;
+	background: url(../img/homeimg/bus.png);
+	background-size: 100% 100%;
+	left: 13%;
+	animation: slideInRight 1s 1 cubic-bezier(0, 0, 0.56, 1.51) both;
+    -webkit-animation: slideInRight 1s 1 cubic-bezier(0, 0, 0.56, 1.51) both;
+    
+}
+.home .bottom_page {
+	position: fixed;
+	bottom: 0;
+}
+.bottom_page .person_down {
+	position: absolute;
+	background: url(../img/homeimg/people.png);
+	background-size: 100% 100%;
+	width: 16.0rem;
+	height: 7.530667rem;
+	bottom: 0;
+	-webkit-animation: bounceInUp 1.5s 1 linear both;
+			animation: bounceInUp 1.5s 1 linear both;
+}
+
+.bottom_page .person_up {
+	position: absolute;
+	background: url(../img/homeimg/5.png);
+	background-size: 100% 100%;
+	width: 16.0rem;
+	height: 7.530667rem;
+	bottom: 0;
+	-webkit-animation: bounceInUp 2s 1 linear both;
+			animation: bounceInUp 2s 1 linear both;
+}
+
+.go_home_logo {
+
+}
+body .home .go_home_logo {
+	animation: slideOutUp 1s 1 cubic-bezier(0, 0, 0.56, 1.51) both;
+    -webkit-animation: slideOutUp 1s 1 cubic-bezier(0, 0, 0.56, 1.51) both;
+}
+
+body .home .go_home_title {
+	-webkit-animation: slideOutRight 1.2s 1 linear both;
+	animation: slideOutRight 1.2s 1 linear both;
+}
+body .home .go_home_bus {
+	-webkit-animation:slideOutLeft 1s 1 linear both !important;
+	animation:slideOutLeft 1s 1 linear both !important;
+}
+body .home .go_home_city {
+	-webkit-animation: fadeOut 1.5s 1 linear both;
+	animation: fadeOut 1.5s 1 linear both;
+}
+body .home .go_people {
+	-webkit-animation: bounceOutDown 1.5s 1 linear both;
+	animation: bounceOutDown 1.5s 1 linear both;
+}

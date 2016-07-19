@@ -1,0 +1,947 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #89C2D5;
+}
+
+.m-pancake {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #89C2D5;
+    overflow: hidden;
+    animation-duration: 1.5s !important;
+}
+
+@-webkit-keyframes notice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes notice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.m-pancake .notice {
+    -webkit-animation: notice .75s infinite ease-in-out alternate;
+    -o-animation: notice .75s infinite ease-in-out alternate;
+    animation: notice .75s infinite ease-in-out alternate;
+}
+
+.m-pot, .preload.m-pot {
+    position: absolute;
+    width: 100%;
+    height: 18.2rem;
+    top: 0;
+    left: 0;
+    background: url("../images/pot.png") no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-height: 460px) {
+    .m-pot {
+        top: -1rem;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .m-pot {
+        top: -2rem;
+    }
+}
+
+.m-pot .panel {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    left: 1rem;
+    top: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+.m-pot .panel:after {
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.m-pot .panel .onion {
+    width: .2rem;
+    height: .05rem;
+    border-radius: .1rem;
+    background: #1b8d45;
+    display: inline-block;
+    position: absolute;
+}
+
+.m-pot .cakePanel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 4rem;
+    height: 4rem;
+    background-clip: content-box;
+}
+
+.m-pot .cakeFrame {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.m-pot .cakeInner {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+}
+
+.m-pot .sauce {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.m-pot .board {
+    border-radius: 6rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+
+.m-pot [data-role="cake"] {
+    background-size: contain !important;
+    width: 4rem;
+    height: 4rem;
+    background-clip: content-box;
+    position: absolute;
+}
+
+.m-pot [data-role="cake"].cake1, .preload.cake1 {
+    background: url("../images/cake/cake1.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].cake2, .preload.cake2 {
+    background: url("../images/cake/cake2.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].cake3, .preload.cake3 {
+    background: url("../images/cake/cake3.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].cake4, .preload.cake4 {
+    background: url("../images/cake/cake4.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].cake5, .preload.cake5 {
+    background: url("../images/cake/cake5.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].cake6, .preload.cake6 {
+    background: url("../images/cake/cake6.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].cake7, .preload.cake7 {
+    background: url("../images/cake/cake7.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].cake8, .preload.cake8 {
+    background: url("../images/cake/cake8.png") no-repeat;
+}
+
+.m-pot [data-role="cake"].pancake, .preload.pancake {
+    background: url("../images/pancake.png") no-repeat;
+}
+
+.m-pot .cake_cover_u {
+    position: absolute;
+    background: url("../images/cake_cover_u.png") no-repeat;
+    background-size: contain;
+    left: 3.4rem;
+    width: 11rem;
+}
+
+.m-pot .cake_cover_d {
+    position: absolute;
+}
+
+.m-pot [data-role="eggs-batter"] {
+    width: 3.19rem;
+    height: 3.23rem;
+    position: absolute;
+    left: .5rem;
+    top: .3rem;
+    z-index: 1;
+}
+
+.m-pot [data-role="eggs-batter"].eggs1, .preload.eggbatters1 {
+    background: url("../images/eggbatters1.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pot [data-role="eggs-batter"].eggs2, .preload.eggbatters2 {
+    background: url("../images/eggbatters2.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pot [data-role="eggs-batter"].eggs3, .preload.eggbatters3 {
+    background: url("../images/eggbatters3.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth, .preload.m-cloth {
+    position: absolute;
+    width: 100%;
+    height: 7.5rem;
+    bottom: 0;
+    left: 0;
+    background: url("../images/tablecloth.png") no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-height: 460px) {
+    .m-pancake .m-cloth {
+        bottom: -1rem;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .m-pancake .m-cloth {
+        bottom: -2rem;
+    }
+}
+
+.m-pancake .m-cloth .bgImg {
+    position: absolute;
+    bottom: 0;
+}
+
+.m-pancake .m-cloth [data-role="holder"] {
+    width: 7.12rem;
+    height: 7.12rem;
+    position: absolute;
+    top: .2rem;
+    left: .62rem;
+}
+
+.m-pancake .m-cloth [data-role="tip"] {
+    width: 9.43rem;
+    height: 9.15rem;
+    position: absolute;
+    left: .62rem;
+    top: -2.45rem;
+}
+
+.m-pancake .m-cloth [data-role="tool"] {
+    width: 6.55rem;
+    height: 6.58rem;
+    position: absolute;
+    right: .65rem;
+    top: .38rem;
+}
+
+.m-pancake .m-cloth [data-role="holder"].batter, .preload.pan-batter {
+    background: url("../images/pan-batter.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="holder"].pan, .preload.pan {
+    background: url("../images/pan.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="holder"].pan_sauce, .preload.pan_sauce {
+    background: url("../images/pan_sauce.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="holder"].pan_chilli, .preload.pan_chilli {
+    background: url("../images/pan_chilli.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="holder"].plate, .preload.plate {
+    top: -0.2rem;
+    left: .75rem;
+    background: url("../images/plate.png") no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.m-pancake .m-cloth [data-role="tip"].batter {
+    background: url("../images/batter.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="tip"].pan_sauce {
+    background: url("../images/tip_sauce.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="tip"].pan_chilli {
+    background: url("../images/tip_chilli.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="tip"].plate, .preload.eggs {
+    width: 10.5rem;
+    height: 10.5rem;
+    position: absolute;
+    left: .3rem;
+    top: -3rem;
+    background: url("../images/eggs.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="tool"].shovel, .preload.shovel {
+    background: url("../images/shovel.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="tool"].rake, .preload.rake {
+    background: url("../images/rake.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pot [data-role="tip-top"] {
+    width: 8.4rem;
+    height: 4.3rem;
+    bottom: 11.1rem;
+    left: 3.75rem;
+    position: absolute;
+}
+
+.m-pot [data-role="tip-top"].spread, .preload.spread {
+    background: url("../images/spread.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pot [data-role="tip-top"].spread_egg, .preload.spread_egg {
+    width: 10.1rem;
+    height: 4.48rem;
+    bottom: 2.3rem;
+    left: 2.9rem;
+    background: url("../images/spread_egg.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pot [data-role="tip-top"].swipup, .preload.tip_swipup {
+    background: url("../images/tip_swipup.png") no-repeat;
+    background-size: contain;
+    width: 8.4rem;
+    height: 3.2rem;
+    bottom: 1.3rem;
+    left: 6.75rem;
+}
+
+.m-pot [data-role="tip-top"].swipdown, .preload.tip_swipdown {
+    background: url("../images/tip_swipdown.png") no-repeat;
+    background-size: contain;
+    width: 8.4rem;
+    height: 3.2rem;
+    top: 0.6rem;
+    left: 6.75rem;
+    z-index: 10;
+}
+
+.m-pot [data-role="tip-top"].butter-brush, .preload.butter-brush {
+    background: url("../images/butter_brush.png") no-repeat;
+    background-size: contain;
+    width: 10.4rem;
+    height: 4.2rem;
+    top: 11.5rem;
+    left: 3.25rem;
+    z-index: 10;
+}
+
+.m-pot [data-role="tip-top"].chilli-brush, .preload.chilli-brush {
+    background: url("../images/chilli_brush.png") no-repeat;
+    background-size: contain;
+    width: 10.4rem;
+    height: 4.2rem;
+    top: 2rem;
+    left: 3.75rem;
+    z-index: 10;
+}
+
+.m-pot [data-role="bowl"], .preload.bowl {
+    width: 3.3rem;
+    height: 3.57rem;
+    bottom: .88rem;
+    right: 1rem;
+    position: absolute;
+    background: url("../images/bowl.png") no-repeat;
+    background-size: contain;
+    display: none;
+    z-index: 5;
+}
+
+.m-pot [data-role="tip-next"], .preload.next {
+    width: 1.6rem;
+    height: 2rem;
+    top: 0.6rem;
+    left: 1.1rem;
+    position: absolute;
+    background: url("../images/next.png") no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+.m-pot [data-role="yolk"] {
+    width: 4rem;
+    height: 4rem;
+    background-size: contain !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.m-pot [data-role="yolk"].yolk1, .preload.yolk1 {
+    background: url("../images/cake/yolk1.png") no-repeat;
+}
+
+.m-pot [data-role="yolk"].yolk2, .preload.yolk2 {
+    background: url("../images/cake/yolk2.png") no-repeat;
+}
+.m-pot [data-role="yolk"].yolk3, .preload.yolk3 {
+    background: url("../images/cake/yolk3.png") no-repeat;
+}
+.m-pot [data-role="yolk"].yolk4, .preload.yolk4 {
+    background: url("../images/cake/yolk4.png") no-repeat;
+}
+.m-pot [data-role="yolk"].yolk5, .preload.yolk5 {
+    background: url("../images/cake/yolk5.png") no-repeat;
+}
+.m-pot [data-role="yolk"].yolk6, .preload.yolk6 {
+    background: url("../images/cake/yolk6.png") no-repeat;
+}
+.m-pot [data-role="yolk"].yolk7, .preload.yolk7 {
+    background: url("../images/cake/yolk7.png") no-repeat;
+}
+.m-pot [data-role="yolk"].yolk8, .preload.yolk8 {
+    background: url("../images/cake/yolk8.png") no-repeat;
+}
+
+.m-pot [data-role="crackers"], .preload.crackers {
+    width: 4rem;
+    height: 4rem;
+    background: url("../images/crackers.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    opacity: 0;
+}
+
+.m-pot [data-role="cover_down"], .preload.cover_down {
+    width: 4rem;
+    height: 4rem;
+    background: url("../images/cover_down.png") no-repeat;
+    background-size: contain;
+    bottom: -1.9rem;
+    position: absolute;
+    left:0;
+    z-index: 5;
+}
+
+.m-pot [data-role="cover_up"], .preload.cover_up {
+    width: 4rem;
+    height: 4rem;
+    background: url("../images/cover_up.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:0;
+    top: -2rem;
+    z-index: 5;
+}
+
+.m-pancake .m-cloth [data-role="eggs"] {
+    width: 100%;
+    height: 100%;
+}
+
+.m-pancake .m-cloth [data-role="eggs"].eggs3, .preload.eggs3{
+    background: url("../images/eggs3.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="eggs"].eggs2, .preload.eggs2{
+    background: url("../images/eggs2.png") no-repeat;
+    background-size: contain;
+}
+
+.m-pancake .m-cloth [data-role="eggs"].eggs1, .preload.eggs1 {
+    background: url("../images/eggs1.png") no-repeat;
+    background-size: contain;
+}
+
+.m-score {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #89C2D5;
+    overflow: hidden;
+}
+
+.m-score .m-cloth, .preload.cloth_h {
+    position: absolute;
+    width: 100%;
+    height: 7.68rem;
+    bottom: 0;
+    left: 0;
+    background: url("../images/cloth_h.png") no-repeat;
+    background-size: cover;
+}
+
+.m-score [data-role="bag_back"], .preload.bag_back {
+    position: absolute;
+    left: 16rem;
+    top: 2rem;
+    width: 12rem;
+    height: 12rem;
+    background: url("../images/bag_back.png") no-repeat;
+    background-size: contain;
+}
+
+.m-score [data-role="bag_front"], .preload.bag_front {
+    position: absolute;
+    left: 16rem;
+    top: 2rem;
+    width: 12rem;
+    height: 12rem;
+    background: url("../images/bag_front.png") no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+@keyframes inBag {
+    from {
+        left: 16rem;
+    }
+
+    to {
+        left: 8rem;
+    }
+}
+
+@-webkit-keyframes inBag {
+    from {
+        left: 16rem;
+    }
+
+    to {
+        left: 8rem;
+    }
+}
+
+@keyframes rotateBag {
+    from {
+        -webkit-transform: scale3d(1, 1, 1) rotate3d(1, 1, 1, 0deg);
+        transform: scale3d(1, 1, 1) rotate3d(1, 1, 1, 0deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(0.85, 0.85, 1) rotate3d(0,0,1,80deg);
+        transform: scale3d(0.85, 0.85, 1) rotate3d(0,0,1,80deg);
+    }
+}
+
+@-webkit-keyframes rotateBag {
+    from {
+        -webkit-transform: scale3d(1, 1, 1) rotate3d(1, 1, 1, 0deg);
+        transform: scale3d(1, 1, 1) rotate3d(1, 1, 1, 0deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(0.85, 0.85, 1) rotate3d(0,0,1,80deg);
+        transform: scale3d(0.85, 0.85, 1) rotate3d(0,0,1,80deg);
+    }
+}
+
+.m-score .inBag {
+    -webkit-animation-name: inBag;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform-origin: 0% 50%;
+    animation-name: inBag;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transform-origin: 0% 50%;
+}
+
+.m-score .rotateBag {
+    -webkit-animation-name: rotateBag;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: rotateBag;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.m-score [data-role="cake_score"] {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    width: 12rem;
+    height: 12rem;
+    background: url("../images/pancake.png") no-repeat;
+    background-size: contain;
+}
+
+.m-score [data-role="cake_last"], .preload.cake_last {
+    position: absolute;
+    left: 1.6rem;
+    width: 12rem;
+    height: 12rem;
+    background: url("../images/bag_last.png") no-repeat;
+    background-size: contain;
+    display: none;
+    z-index: 5;
+}
+
+@-webkit-keyframes landing {
+    from {}
+
+    100% {
+        bottom: 6rem;
+    }
+}
+
+@keyframes landing {
+    from {}
+
+    100% {
+        bottom: 6rem;
+    }
+}
+
+.m-score .landing {
+    -webkit-animation-name: landing;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: landing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rise {
+    from {
+        bottom: -7.68rem;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes rise {
+    from {
+        bottom: -7.68rem;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.m-score .rise {
+    -webkit-animation-name: rise;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: rise;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.m-score [data-role="cloth_transition"] {
+    bottom: -7.68rem;
+}
+
+.m-score .score {
+    width: 11.95rem;
+    height: 6.78rem;
+    position: absolute;
+    background: url("../images/score.png") no-repeat;
+    background-size: contain;
+    left: 2rem;
+    top: 1.4rem;
+    display: none;
+    z-index: 5;
+}
+
+.m-score .m-cloth {
+    display: none;
+}
+
+.m-score .m-cloth .bag, .preload.bag {
+    width: 7.2rem;
+    height: 10.95rem;
+    left: 4.1rem;
+    top: -9.05rem;
+    background: url("../images/bag.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.m-score .m-cloth .seasonings, .preload.seasonings {
+    width: 2.88rem;
+    height: 3.83rem;
+    left: 10.1rem;
+    top: -1.28rem;
+    background: url("../images/seasonings.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.m-score .m-cloth .share, .preload.share {
+    position: absolute;
+    width: 10.25rem;
+    height: 1.9rem;
+    left: 2.9rem;
+    top: 2.95rem;
+    background: url("../images/share.png") no-repeat;
+    background-size: contain;
+}
+
+.m-score .m-cloth .reward, .preload.reward {
+    position: absolute;
+    width: 4.62rem;
+    height: 1.9rem;
+    left: 2.9rem;
+    top: 4rem;
+    background: url("../images/reward.png") no-repeat;
+    background-size: contain;
+}
+.nicesay {
+    background: url("../img/over.png") no-repeat;
+    position: absolute;
+    width: 3.712rem;
+    height: 3.99rem;
+    top: -7.8rem;
+    left: 10rem;
+    background-size: 100% 100%;
+}
+.m-score .m-cloth .more, .preload.more {
+    position: absolute;
+    width: 4.62rem;
+    height: 1.9rem;
+    left: 8.5rem;
+    top: 4rem;
+    background: url("../images/more.png") no-repeat;
+    background-size: contain;
+}
+
+.m-score [data-role="score"] {
+    position: absolute;
+    right: 5rem;
+    top: 1.38rem;
+}
+
+.m-score [data-role="percent"] {
+    position: absolute;
+    left: 6.7rem;
+    top: 3.5rem;
+}
+
+.m-score [data-role="title"] {
+    position: absolute;
+    left: 0;
+    top: 4.95rem;
+    height: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.m-score [data-role="title"] span {
+    display: inline-block;
+    background-size: contain !important;
+}
+
+.m-score [data-role="title"] .chef, .preload.chef {
+    background: url("../images/title/chef.png") no-repeat;
+    width:7.88rem;
+    height: 1.35rem;
+}
+
+.m-score [data-role="title"] .crackers_king, .preload.crackers_king {
+    background: url("../images/title/crackers_king.png") no-repeat;
+    width:8rem;
+    height: 1.35rem;
+}
+
+.m-score [data-role="title"] .pancake_man, .preload.pancake_man {
+    background: url("../images/title/pancake_man.png") no-repeat;
+    width:8rem;
+    height: 1.35rem;
+}
+
+.m-score i.thin {
+    width: 0.4rem;
+    height: 0.6rem;
+    display: inline-block;
+    background-size: contain !important;
+}
+.m-score i.thin0 {
+     background: url("../images/thin/0.png") no-repeat;
+}
+.m-score i.thin1 {
+    background: url("../images/thin/1.png") no-repeat;
+}
+.m-score i.thin2 {
+    background: url("../images/thin/2.png") no-repeat;
+}
+.m-score i.thin3 {
+    background: url("../images/thin/3.png") no-repeat;
+}
+.m-score i.thin4 {
+    background: url("../images/thin/4.png") no-repeat;
+}
+.m-score i.thin5 {
+    background: url("../images/thin/5.png") no-repeat;
+}
+.m-score i.thin6 {
+    background: url("../images/thin/6.png") no-repeat;
+}
+.m-score i.thin7 {
+    background: url("../images/thin/7.png") no-repeat;
+}
+.m-score i.thin8 {
+     background: url("../images/thin/8.png") no-repeat;
+ }
+.m-score i.thin9 {
+    background: url("../images/thin/9.png") no-repeat;
+}
+
+.m-score i.fat {
+    width: 1.9rem;
+    height: 2.2rem;
+    display: inline-block;
+    background-size: contain !important;
+    margin: 0.05rem;
+}
+.m-score i.fat0, .preload.fat0 {
+    background: url("../images/fat/0.png") no-repeat;
+}
+.m-score i.fat1, .preload.fat1 {
+    background: url("../images/fat/1.png") no-repeat;
+    margin-right: -.3rem;
+    margin-left: -.2rem;
+}
+.m-score i.fat2, .preload.fat2 {
+    background: url("../images/fat/2.png") no-repeat;
+}
+.m-score i.fat3, .preload.fat3 {
+    background: url("../images/fat/3.png") no-repeat;
+}
+.m-score i.fat4, .preload.fat4 {
+    background: url("../images/fat/4.png") no-repeat;
+}
+.m-score i.fat5, .preload.fat5 {
+    background: url("../images/fat/5.png") no-repeat;
+}
+.m-score i.fat6, .preload.fat6 {
+    background: url("../images/fat/6.png") no-repeat;
+}
+.m-score i.fat7, .preload.fat7 {
+    background: url("../images/fat/7.png") no-repeat;
+}
+.m-score i.fat8, .preload.fat8 {
+    background: url("../images/fat/8.png") no-repeat;
+}
+.m-score i.fat9, .preload.fat9 {
+    background: url("../images/fat/9.png") no-repeat;
+}
+.m-line {
+    background: url("../img/redline.png") no-repeat;
+}
+.m-notice {
+    width: 100%;
+    height: 100%;
+    background: #89C2D5;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    z-index: 200;
+}
+.m-notice .tip, .preload.share_notice {
+    width: 16rem;
+    height: 16rem;
+    background: url("../images/share_notice.png") no-repeat;
+    background-size: contain;
+}
+
+.preload {
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+.m-score .score2, .preload.score2 {
+    width: 11.95rem;
+    height: 6.78rem;
+    position: absolute;
+    background: url("../images/score2.png") no-repeat;
+    background-size: contain;
+    left: 2rem;
+    top: 1.4rem;
+    z-index: 5;
+}
+
+.m-score .m-cloth.gift {
+    display: block;
+}
+
+.m-score .m-cloth .reward2 {
+    position: absolute;
+    width: 4.62rem;
+    height: 1.9rem;
+    left: 2.9rem;
+    top: 4rem;
+    background: url("../images/reward.png") no-repeat;
+    background-size: contain;
+}
+
+.m-score .m-cloth .more2, .preload.more2 {
+    position: absolute;
+    width: 4.62rem;
+    height: 1.9rem;
+    left: 8.5rem;
+    top: 4rem;
+    background: url("../images/more2.png") no-repeat;
+    background-size: contain;
+}
+
+.m-reward-pop, .preload.reward-pop {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+}
+
+.m-reward-pop img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+.m-reward-pop [data-role="close"] {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top:0;
+    right: 0;
+}
